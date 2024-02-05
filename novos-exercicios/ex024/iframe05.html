@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe Segurança</title>
+</head>
+<body>
+    <h1>Aprendendo a deixar iframe mais segura para captura de dados de sites de terceiros.</h1>
+    <p>Usar sandbox"sandbox" para tirar todos os acessos do site de terceiro</p>
+    <p>Usar sandbox"allow-same-origin (para dizer que permite uso de conteudo da mesma origem) | allow-forms (para dizer que aceita captura de formularios) | allow-scrips (para dizer que aceira scripts)"</p>
+    <p>Usar referrerpolicy="no-referrer" (para não aceitar cookies de navegação ou sejá, não coletar nenhum dado do usuario do site.</p>
+
+    <iframe src="paginasextra/extra01.html" frameborder="1" sandbox="allow-forms allow-same-origin allow-scripts" referrerpolicy="no-referrer"></iframe> <!-- Essa linha de code é usada para bloquear algumas funções de sites de terceiros dentro do iframe / ou dar algumas liberdades-->
+</body>
+</html>
