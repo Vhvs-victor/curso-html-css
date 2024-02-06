@@ -8,8 +8,8 @@
 
 html, body{
     width: 100vw;
-    height: 100vh;
-    background-color: black;
+    height: 110vh;
+    background-color: rgb(255, 255, 255);
 }
 
 body{
@@ -17,6 +17,7 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 main{
@@ -44,6 +45,8 @@ section#telefone{
 
 section#redessociais{
     text-align: right;
+    margin-right: 20px;
+    padding: 20px;
 }
 
 section#redessociais img{
@@ -62,3 +65,24 @@ section#redessociais img:hover{
 
 }
 
+footer{
+    background-color: rgba(54, 53, 53, 0.993);
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.486);
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+}
+
+footer a:hover{
+    background-color: brown;
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
