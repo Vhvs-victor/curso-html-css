@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario | Input com parametros</title>
+</head>
+<body>
+    <h1>Aprendendo novos parametros para form e input</h1>
+    <p>Primeiro usamos dentro do form o parametro autocomplete="on" deixando o habilitado e dentro de input, usamos o parametro autocomplete="nickname" / "newpassword">
+    <form method="post" autocomplete="on">
+        <label for="inome">Digite seu nome:</label>
+        <input type="text" name="nome" id="inome" autocomplete="nickname"> <!--Classificando o input de campo texto, como nome de usuarios, para facilitar o navegador a saber o que cada campo significa-->
+        <label for="inovasenha">Nova senha</label>
+        <input type="password" name="novasenha" id="inovasenha" autocomplete="new-password"> <!--Classificando o input de campo de senha, como nova senha, para facilitar o navegador a saber o que cada campo significa. -->
+        <input type="submit" value="Enviar"> <!--Botão para enviar informações do formulario-->
+    </form>
+
+    <p>Usando o parametro required dentro do input para não deixar que o formulario sejá enviado em branco / sem preencher os campos de dados</p>
+    <form method="get" autocomplete="off"> <!--Desligando o preencher nome automaticamente-->
+        <label for="inome">Digite o seu Nome:</label>
+        <input type="text" name="nome" id="inome" required>
+        <label for="isobrenome">Digite seu Sobrenome</label>
+        <input type="text" name="sobrenome" id="isobrenome" required>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"> <!--Botão para resetar texto dentro dos campos-->
+    </form>
+
+    <p>Usando os parametros minlength="" e maxlength="" dentro do input para dizer o maximo e minimo de quantos caracters pode ter no campo de texto</p>
+    <form method="get" autocomplete="on">
+        <label for="inomecompleto">Digite seu Nome completo</label> <!-- -->
+        <input type="text" name="nomecompleto" id="inomecompleto" required minlength="10" autocomplete="nickname"> <!-- minlength é usado para dizer quantos caracters minimos terá que ter dentro do campo de texto para que o formulario seja enviado ou valido-->
+        <label for="isenha">Nova senha</label>
+        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" autocomplete="new-password"> <!-- maxlength foi usado para dar o maximo de caracters que pode ter em uma senha e minlength para dar o minimo de caracter que a senha tem que ter para ser valida-->
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p>Neste exemplo, iremos mostrar os conceitos anteriores e o parametro (size) dentro de input, para mostrar apenas no campo de texto com quantidade de um determinado numero de caracters na tela</p>
+    <form method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="Digite seu nome completo" required size="10" maxlength="25" autocomplete="nickname"> <!--Placeholder =" " é usado para colocar informações dentro das caixas de texto, traendo assim mais facilidade para o usuario-->
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required minlength="8" autocomplete="current-password"></p> <!--o parametro autcomplete="current-password" significa senha atual, então aqui o usuario estaria colocando a sua senha ja cadastrada anteriormente no site-->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

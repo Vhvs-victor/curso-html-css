@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotmularios | method</title>
+</head>
+<body>
+    <form autocomplete="off" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>Para dados não sensiveis, usa-se &lt;form method="get"&gt; - envio de textos com menos de 3mil letras, nomes e sobrenomes, compartilhamento de links.</p>
+    </form>
+
+    <input type="submit" value="Enviar">
+
+    <form autocomplete="off" method="post">
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha">
+        </p>
+        <p>Para dados sensiveis, usa-se o &lt;form method="post"&gt; - envio de textos com mais de 3mil letras, numeros de cartões de crédito, senhas pessoais, envio de arquivos</p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
