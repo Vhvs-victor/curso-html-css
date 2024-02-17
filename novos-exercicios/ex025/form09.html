@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Controles para formularios sem input</h1>
+    <p>Controle Select</p>
+    <form method="get">
+        <label for="iestado">Estado:</label>
+        <select name="Estado" id="iestado">
+            <option value="">-- Escolha --</option>
+                <optgroup label="Região Sul">
+                    <option value="RS">Rio Grande do sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+
+                <optgroup label="Região Leste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+        </select>
+    </form>
+
+    <p>Controle datalist</p>
+    <form method="post">
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="listprof">
+        <datalist id="listprof">
+            <option value="ADM"></option>
+            <option value="ENG"></option>
+            <option value="PROF"></option>
+            <option value="COM"></option>
+            <option value="POL"></option>
+        </datalist>
+    </form><br>
+
+    <p>Controle textarea</p>
+    <p>Não tem limite de caracteres, porem pode ser alterado a quantidade de linhas na tela e a qualtidade de quebra de texto</p>
+    <form method="post">
+        <label for="imsg">Menssagem</label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>
