@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario</title>
+</head>
+<body>
+    <h1>Aprendendo novos comandos de Input e parametros</h1>
+    <p>input:date</p>
+    <p><mark>"value"</mark> preenche o campo com a data indicada, sendo ano-mês-dia</p>
+    <form method="post" autocomplete="off">
+        <label for="idata">Data da prova:</label><br>
+        <input type="date" name="data" id="idata" required value="2024-02-15">
+    </form>
+    <p>input:month</p>
+    <p><mark>"value"</mark> preenche o campo com o ano e mês indicada, sendo ano-mês</p>
+    <form method="post" autocomplete="off">
+        <label for="imes">Ano da prova:</label><br>
+        <input type="month" name="mes" id="imes" required value="2024-02">
+    </form>
+    <p>input:time</p>
+    <p><mark>"value"</mark> preenche o campo com o horario indicada</p>
+    <form method="post" autocomplete="off">
+        <label for="ihora">Horario da prova:</label><br>
+        <input type="time" name="hora" id="ihora" required value="14:35">
+    </form>
+    <h2>Usando parametro "step" dentro do input:number</h2>
+    <form method="post" autocomplete="off">
+        <label for="imedia">Média</label>
+        <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1">
+        <p>Na campo de Média, está começando de 0 e subindo de 0.1 decimos até 10. Isso tudo se dá devido ao uso do parametro step="0.1" dentro da tag &lg;input:number&gt;.
+        Placeholder="0 a 10" / value="5" são outros parametros atribuidos para input.
+        Caso sejá usado o parametro value="" ele substituirá o comando placeholder="", sendo assim o valor do campo de Média será automaticamente modificado para o comando de value="".</p>
+    </form>
+</body>
+</html>
