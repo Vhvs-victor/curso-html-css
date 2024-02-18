@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*Mostrar na tela*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1{
+    text-align: center;
+}
+
+nav{
+    margin: 10px;
+    padding: 5px;
+    background-color: gray;
+}
+
+nav li{
+    display: inline-block;
+    padding: 8px;
+    background-color: rgb(53, 52, 52);
+    color: white;
+}
+
+main{
+    display: block;
+    width: 600px;
+    margin: auto;
+}
+
+main h2, p{
+    padding: 10px;
+}

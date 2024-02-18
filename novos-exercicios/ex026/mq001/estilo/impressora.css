@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*Mostrar para impressão*/
+
+body{
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+}
+
+nav{
+    display: none;
+}
+
+header h1{
+    text-align: center;
+}
+
+main{
+    line-height: 1.6em;
+}
