@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/*All*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    background-color: rgb(223, 221, 221);
+}
+
+header h1{
+    text-align: center;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+}
+
+header #burger{
+    background-color: rgb(48, 47, 47);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+menu{
+    margin-top: 2px;
+    background: rgb(75, 75, 75);
+    display: none;
+}
+
+menu li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(233, 232, 232);
+}
+
+menu li a:hover{
+    background-color: gray;
+}
+
+main{
+    width: 80vw;
+    height: 96vh;
+    margin: auto;
+    margin-top: 5px;
+    background-color: white;
+}
+
+main h2{
+    padding: 20px;
+}
+
+main p{
+    padding: 10px 20px;
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 10px;
+}
