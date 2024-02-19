@@ -27,8 +27,7 @@ header #burger{
     cursor: pointer;
 }
 
-menu{
-    margin-top: 2px;
+#itens{
     background: rgb(75, 75, 75);
     display: none;
 }
