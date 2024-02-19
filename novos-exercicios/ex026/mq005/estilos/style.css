@@ -63,3 +63,14 @@ main p{
     text-align: justify;
     text-indent: 10px;
 }
+footer{
+    background-color: rgb(59, 59, 59);
+    margin: 3px;
+    width: 100vw;
+}
+footer p{
+    padding: 8px;
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+}
