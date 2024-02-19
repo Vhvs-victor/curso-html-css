@@ -9,6 +9,7 @@
 
 html, body{
     background-color: rgb(223, 221, 221);
+    height: 100vh;
 }
 
 header h1{
