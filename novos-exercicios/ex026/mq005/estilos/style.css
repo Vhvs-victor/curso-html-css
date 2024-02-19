@@ -50,7 +50,7 @@ menu li a:hover{
 
 main{
     width: 80vw;
-    height: 100vh;
+    height: 100%;
     margin: auto;
     margin-top: 5px;
     background-color: white;
