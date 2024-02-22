@@ -10,7 +10,7 @@
 html, body{
     width: 100vw;
     height: 100vh;
-    background-color: blueviolet;
+    background-color: #5F2C82;
 }
 
 main{
@@ -21,7 +21,7 @@ main{
 main section#login{
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,7 +35,7 @@ main section#login{
 
 section#login div#imagem{
     display: block;
-    background-color: blueviolet;
+    background-color: #5F2C82;
     background-image: url(../imagens/login-predio.jpg);
     width: 250px;
     height: 200px;
@@ -47,4 +47,87 @@ section#login div#imagem{
 section#login > div#formulario{
     display: block;
     padding: 10px;
+}
+
+div#formulario h1{
+    text-align: center;
+    padding: 10px;
+}
+
+div#formulario p{
+    font-size: 0.8em;
+}
+
+div.caixa{
+    display: block;
+    background-color: #5F2C82;
+    border-radius: 7px;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border: px solid #5F2C82;
+}
+
+div.caixa i span{
+    font-size: 1.8em;
+    padding: 5px;
+    height: 40px;
+    color: white;
+}
+
+div.caixa input{
+    background-color: #94CFCD;
+    width: calc(100% - 45px);
+    height: 36px;
+    transform: translatey(-7px);
+    border-radius: 7px;
+}
+
+div.caixa input:focus-within{
+    background-color: white;
+}
+
+div.caixa label{
+    display: none;
+}
+
+form input[type=submit]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #5c9c9a;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover{
+    background-color :#2D6462;
+}
+
+form a.botaosenha{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-top: 6px;
+    margin-top: 5px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #5c9c9a;
+    border-radius: 7px;
+    font-size: 1em;
+    color: #5c9c9a;
+}
+
+form a.botaosenha:hover{
+    background-color: #5c9c9a;
+    color: white;
+}
+
+a.botaosenha i span{
+    font-size: 0.9em;
+    margin-left: 3px;
 }
