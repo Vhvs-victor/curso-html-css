@@ -24,7 +24,7 @@
 }
 
 @media screen and (min-width: 992px) {
-    /*telas maiores*/
+    /*notebooks, desktops e tvs*/
     body{
         background-image: linear-gradient(to bottom, #5F2C82, #5c9c9a);
     }
