@@ -1,0 +1,43 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    height: 80px;
+    background-color: red;
+}
+
+header a{display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(163, 6, 6);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+img{
+    height: 100px;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+td{
+    width: 250px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#cat{
+    display: inline-block;
+    text-align: left;
+}
